@@ -1,7 +1,11 @@
+container {
+    font-family: 'Dancing Script', cursive;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    height: 20%;
+    height: 50px;
     color:palevioletred;
     padding: 5px 20px;
 }
@@ -27,13 +31,13 @@ header button:last-child {
 
 main {
     /* background-color: palegreen; */
-    display: flex;
+    display: flex; 
 }
 
-ul.menubar {
+.menubar {
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    margin-bottom: 5px;
     padding: 0 0 0 15px;
 }
 
@@ -68,28 +72,34 @@ ul.menubar ul {
     padding: 0px;       /* ★サブメニュー内側の余白(ゼロ) */
     display: none;      /* ★標準では非表示にする */
     position: absolute; /* ★絶対配置にする */
- }
+}
 
- ul.menubar ul li {
+ul.menubar ul li {
     width: 135px;               /* サブメニュー1項目の横幅(135px) */
     border-top: 1px solid pink; /* 項目上側の枠線(ピンク色で1pxの実線) */
- }
- ul.menubar ul li a {
+}
+
+ul.menubar ul li a {
     line-height: 35px;   /* サブメニュー1項目の高さ(35px) */
     text-align: left;    /* 文字列の配置(左寄せ) */
     padding-left: 5px;   /* 文字列前方の余白(5px) */
     font-weight: normal; /* 太字にはしない */
- }
- ul.menubar ul li a:hover {
+}
+
+ul.menubar ul li a:hover {
     background-color: #ffff80; /* サブメニュー項目にマウスが載ったときの背景色(淡い黄色) */
     color: #005500;            /* サブメニュー項目にマウスが載ったときの文字色(濃い緑色) */
- }
+}
 
-.side {
+
+
+.title {
     background-color: rgba(229, 157, 181, 0.5);
     color: goldenrod;
     width: 30%;
+    font-size: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -103,38 +113,92 @@ ul.menubar ul {
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
-
 }
-
-
-
-
-
-
-
 
 .photos {
-display: flex;
-height: 100vh;
-    background-color: goldenrod;
-    color: whitesmoke;
-
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
 }
 
-.img-box {
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-wrapper div {
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide {
+    height: 400px;
+    width: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition-property: transform;
+}
+
+.bg-1 {
+    background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae97.jpg);
+}
+.bg-2 {
+    background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae95.jpg);
+}
+.bg-3 {
+    background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae92.jpg);
+}
+.bg-4 {
+    background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae8d.jpg);
+}
+.bg-5 {
+    background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae93.jpg);
+}
+.bg-6 {
+    background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae96.jpg);
+}
+
+
+
+
+
+
+
+h2 {
+    padding: 30px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-box img {
-    height: 400px;
-    width: 600px;
+aside {
+    padding: 20px;
 }
+
 
 .contact {
     display: flex;
     flex-direction: column;
+}
+
+.btn {
+    text-align: right;
+}
+
+.top-btn {
+    background-color: #ddd;
+    margin: 2px;
+    color: palevioletred;
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 
@@ -153,4 +217,19 @@ footer img {
     display: flex;
     align-items: center;
     
+}
+
+
+
+
+.active {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#scroll {
+    transition: 10s;
 }
