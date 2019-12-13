@@ -1,6 +1,4 @@
-container {
-    font-family: 'Dancing Script', cursive;
-}
+
 
 header {
     display: flex;
@@ -121,27 +119,19 @@ ul.menubar ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 50px; */
 }
 
 .swiper-container {
-    width: 600px;
+    width: 1000px;
     height: 300px;
 }
 
 .swiper-wrapper div {
     background-size: cover;
     background-position: center;
+
 }
 
-.swiper-slide {
-    height: 400px;
-    width: 600px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    transition-property: transform;
-}
 
 .bg-1 {
     background-image: url(../img/UNADJUSTEDNONRAW_thumb_ae97.jpg);
@@ -174,6 +164,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Dancing Script', cursive;
 }
 
 aside {

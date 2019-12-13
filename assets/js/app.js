@@ -65,12 +65,12 @@ $(function(){
      })
 
     //  Topへ戻る
-     $('#btn').on('click', function(){
+     $('.btn').on('click', function(){
          console.log(123)
-         
+
 
     //     // 取得した要素の場所に移動
-      $('html, body').animate({scrollTop: 0 }, 1500);
+      $('html, body').animate({scrollTop: 0 }, 1000);
   //      console.log(123);
      })
 
