@@ -160,7 +160,7 @@ ul.menubar ul li a:hover {
 
 h2 {
     padding: 30px;
-    font-size: 50px;
+    font-size: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,9 +172,13 @@ aside {
 }
 
 
-.contact {
+.access {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+
 }
 
 .btn {
