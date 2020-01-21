@@ -179,7 +179,6 @@ h2 {
 /* ここからお問合せ */
 .contact {
     height: 100vh;
-    /* padding: 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
