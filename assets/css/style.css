@@ -44,49 +44,49 @@ ul.menubar:first-child {
 }
 
 ul.menubar li {
-    width: 200px;          /* メニュー項目の横幅(125px) */
-    display: inline-block; /* ★横並びに配置する */
-    list-style-type: none; /* ★リストの先頭記号を消す */
-    position: relative;    /* ★サブメニュー表示の基準位置にする */
+    width: 200px;          
+    display: inline-block; 
+    list-style-type: none; 
+    position: relative;    
 }
 
  ul.menubar a {
-    background-color: goldenrod; /* メニュー項目の背景色(濃い赤色) */
-    color: white;              /* メニュー項目の文字色(白色) */
-    line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
-    text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
-    text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
-    font-weight: bold;         /* 太字にする */
-    display: block;            /* ★項目内全域をリンク可能にする */
+    background-color: goldenrod; 
+    color: white;              
+    line-height: 40px;         
+    text-align: center;        
+    text-decoration: none;     
+    font-weight: bold;         
+    display: block;            
 }
 
  ul.menubar a:hover {
-    background-color:  rgba(229, 157, 181, 0.5); /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
-    color: goldenrod;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+    background-color:  rgba(229, 157, 181, 0.5); 
+    color: goldenrod;            
 }
 
 ul.menubar ul {
-    margin: 0px;        /* ★サブメニュー外側の余白(ゼロ) */
-    padding: 0px;       /* ★サブメニュー内側の余白(ゼロ) */
-    display: none;      /* ★標準では非表示にする */
-    position: absolute; /* ★絶対配置にする */
+    margin: 0px;        
+    padding: 0px;       
+    display: none;      
+    position: absolute; 
 }
 
 ul.menubar ul li {
-    width: 135px;               /* サブメニュー1項目の横幅(135px) */
-    border-top: 1px solid pink; /* 項目上側の枠線(ピンク色で1pxの実線) */
+    width: 135px;               
+    border-top: 1px solid pink; 
 }
 
 ul.menubar ul li a {
-    line-height: 35px;   /* サブメニュー1項目の高さ(35px) */
-    text-align: left;    /* 文字列の配置(左寄せ) */
-    padding-left: 5px;   /* 文字列前方の余白(5px) */
-    font-weight: normal; /* 太字にはしない */
+    line-height: 35px;   
+    text-align: left;    
+    padding-left: 5px;   
+    font-weight: normal; 
 }
 
 ul.menubar ul li a:hover {
-    background-color: #ffff80; /* サブメニュー項目にマウスが載ったときの背景色(淡い黄色) */
-    color: #005500;            /* サブメニュー項目にマウスが載ったときの文字色(濃い緑色) */
+    background-color: #ffff80; 
+    color: #005500;            
 }
 
 
@@ -114,16 +114,18 @@ ul.menubar ul li a:hover {
 }
 
 .photos {
-    padding: 50px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
+/* swiper */
 .swiper-container {
     width: 1000px;
-    height: 300px;
+    height: 350px;
 }
 
 .swiper-wrapper div {
@@ -154,10 +156,6 @@ ul.menubar ul li a:hover {
 
 
 
-
-
-
-
 h2 {
     padding: 30px;
     font-size: 70px;
@@ -167,12 +165,9 @@ h2 {
     font-family: 'Dancing Script', cursive;
 }
 
-aside {
-    padding: 20px;
-}
-
 
 .access {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,13 +176,61 @@ aside {
 
 }
 
+/* ここからお問合せ */
+.contact {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    
+}
+
+.form-left > input {
+    border-radius: 10px;
+    height: 40px;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.form-left > input:first-child {
+    margin-bottom: 20px;
+}
+
+.form-right > textarea {
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 120px;
+    width: 400px;
+}
+
+.submitbtn {
+    padding: 20px;
+    border-radius: 20px;
+}
 .btn {
     text-align: right;
 }
 
 .top-btn {
     background-color: #ddd;
-    margin: 2px;
+    margin: 20px;
     color: palevioletred;
     display: inline-block;
     padding: 15px 10px;

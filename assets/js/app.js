@@ -32,7 +32,7 @@ $(function(){
         console.log(target);
 
     //     // 取得した要素の場所に移動
-      $('html, body').animate({scrollTop: target }, 1500);
+      $('html, body').animate({scrollTop: target }, 500);
   //      console.log(123);
      })
 
@@ -42,11 +42,11 @@ $(function(){
          console.log(123)
 
         // スクロールした要素のいちを取得して
-        let target = $('.acsses').offset().top;
+        let target = $('.access').offset().top;
         console.log(target);
 
     //     // 取得した要素の場所に移動
-      $('html, body').animate({scrollTop: target }, 1500);
+      $('html, body').animate({scrollTop: target }, 800);
   //      console.log(123);
      })
 
@@ -60,7 +60,7 @@ $(function(){
         console.log(target);
 
     //     // 取得した要素の場所に移動
-      $('html, body').animate({scrollTop: target }, 1500);
+      $('html, body').animate({scrollTop: target }, 1000);
   //      console.log(123);
      })
 
@@ -75,22 +75,5 @@ $(function(){
      })
 
      
-     // フワッと出す
-     $(window).on('scroll',function(){
-         console.log(123)
-         let now = $(window).scrollTop()
-     
-         // ターゲットになる要素の位置
-         let target = $('#scroll').offset().top;
-     
-         // 高さを取得
-         let height = window.innerHeight
-         if (now + height > target){
-             console.log('超えました')
-             $('#scroll').removeClass('hide')
-         }else {
-             $('#scroll').addClass('hide');
-         }
-     })
     
 })
